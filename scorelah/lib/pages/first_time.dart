@@ -41,7 +41,7 @@ class _FirstTimeState extends State<FirstTime> {
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       color: Colors.black,
-                      fontSize: 26,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
