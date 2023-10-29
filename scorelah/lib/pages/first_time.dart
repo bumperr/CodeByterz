@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scorelah/pages/ft_button.dart';
+import 'package:scorelah/pages/login.dart';
 
 class FirstTime extends StatefulWidget {
   const FirstTime({super.key});
@@ -35,8 +37,9 @@ class _FirstTimeState extends State<FirstTime> {
               Padding(
                 padding:  EdgeInsets.all(15),
                 child: Text(
-                    'Score-Lah! is your all-in-one academic tool that helpsyou solve exam problems, track your weak points, and provide quality notes.', textAlign: TextAlign.center,
+                    'Score-Lah! is your all-in-one academic tool that helps you solve exam problems, track your weak points, and provide quality notes.', textAlign: TextAlign.center,
                     style: TextStyle(
+                      fontFamily: 'Poppins',
                       color: Colors.black,
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
@@ -50,7 +53,10 @@ class _FirstTimeState extends State<FirstTime> {
                 
               ElevatedButton(
                 style: buttonPrimary,
-                onPressed: () {}, 
+                onPressed: () {
+                  Navigator.push(context, CupertinoPageRoute(builder: (context) => const loginPage())
+                  );
+                }, 
                 child: 
                 Text('I want to be the very best!'),
               ),

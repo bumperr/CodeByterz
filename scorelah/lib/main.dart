@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: _buildTheme(Brightness.dark),
-      home: FirstTime(),
+      theme: ThemeData(fontFamily: 'Poppins'),
+      home: const FirstTime(),
     ); 
   }
 

@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
 
   supabase_flutter: ^1.10.3
+  flutter_svg: ^2.0.5
+  drop_shadow: ^0.0.1+4
 
 
 
@@ -99,4 +101,17 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
+        - asset: fonts/Poppins-Light.ttf
         - asset: fonts/Poppins-Regular.ttf
+        - asset: fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: fonts/Poppins-ExtraBold.ttf
+          weight: 800
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand-Regular.ttf
+        - asset: fonts/Quicksand-Medium.ttf
