@@ -8,6 +8,7 @@ import 'package:scorelah/animated_textfield.dart';
 import 'package:scorelah/custom_animate_border.dart';
 import 'package:scorelah/pages/ft_button.dart';
 import 'package:drop_shadow/drop_shadow.dart';
+import 'package:scorelah/pages/home_page.dart';
 import 'package:scorelah/pages/register.dart';
 
 class loginPage extends StatelessWidget {
@@ -119,7 +120,9 @@ class loginPage extends StatelessWidget {
                         AnimatedTextField(
                           label: "Username", 
                           suffix: null, 
-                          prefix: SvgPicture.asset('assets/usernameicon.svg'),),
+                          prefix: SvgPicture.asset('assets/usernameicon.svg'),
+                          isPassword: false,
+                        ),
                         
                         SizedBox(
                           height: 20,
@@ -129,7 +132,8 @@ class loginPage extends StatelessWidget {
                           label: "Password",
                           suffix: SvgPicture.asset('assets/Eye-slash.svg'),
                           prefix: SvgPicture.asset('assets/passwordicon.svg'),
-                        )
+                          isPassword: true,
+                        ),
                       ],
                     ),
                   ),
@@ -148,7 +152,7 @@ class loginPage extends StatelessWidget {
                       Navigator.push(
                           context,
                           CupertinoPageRoute(
-                              builder: (context) => const loginPage()));
+                              builder: (context) => const homePage()));
                     },
                     child: Text('Login'),
                   ),
