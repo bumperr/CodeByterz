@@ -34,6 +34,7 @@ dependencies:
   supabase_flutter: ^1.10.3
   flutter_svg: ^2.0.5
   drop_shadow: ^0.0.1+4
+  get:
 
 
 
@@ -115,3 +116,6 @@ flutter:
       fonts:
         - asset: fonts/Quicksand-Regular.ttf
         - asset: fonts/Quicksand-Medium.ttf
+    - family: Custom_icons
+      fonts:
+        - asset: fonts/Custom_icons.ttf
