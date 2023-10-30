@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
-class _FYPMathPage extends StatelessWidget {
-  const _FYPMathPage({super.key});
+class FYPMathPage extends StatelessWidget {
+  const FYPMathPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Container(),
+      ),
+    );
   }
 }

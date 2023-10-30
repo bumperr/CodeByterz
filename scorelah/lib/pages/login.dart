@@ -151,7 +151,7 @@ class loginPage extends StatelessWidget {
                       ),
                     ),
                     onPressed: () 
-                      => Get.to(() => const NavigationMenu()
+                      => Get.to(() =>  NavigationMenu()
                     ),
                     child: Text('Login'),
                   ),
