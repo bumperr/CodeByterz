@@ -36,10 +36,10 @@ class _DashboardPageState extends State<DashboardPage> {
           height: 1,
         ),
       ),
-      leading: TextButton(onPressed: () {
+      leading: IconButton(onPressed: () {
         Navigator.pop(context);
       },
-      child:Icon(
+      icon:Icon(
         Icons.arrow_back,
         color: Colors.black,
       ))),
@@ -340,26 +340,3 @@ Column noOfQuestionsToday() {
     ],
   );
 }
-
-// AppBar appBar() {
-//   return AppBar(
-//       backgroundColor: Colors.white,
-//       elevation: 0,
-//       title: const Text(
-//         'Performance',
-//         textAlign: TextAlign.center,
-//         style: TextStyle(
-//           color: Colors.black,
-//           fontFamily: 'Poppins',
-//           fontSize: 16,
-//           fontWeight: FontWeight.w800,
-//           height: 1,
-//         ),
-//       ),
-//       leading: TextButton(onPressed: () {
-//       },
-//       child:Icon(
-//         Icons.arrow_back,
-//         color: Colors.black,
-//       )));
-// }

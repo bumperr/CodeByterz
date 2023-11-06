@@ -6,6 +6,7 @@ import 'package:get/route_manager.dart';
 import 'package:scorelah/custom_icons_icons.dart';
 import 'package:scorelah/pages/dashboard.dart';
 import 'package:scorelah/pages/first_time.dart';
+import 'package:scorelah/pages/settings.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -24,8 +25,9 @@ class ProfilePage extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const SizedBox(width: 32.0),
+                    const SizedBox(width: 34.5),
                     Text('Profile',
                     style: TextStyle(
                         color: Colors.black,
@@ -33,7 +35,9 @@ class ProfilePage extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                       ),
                     ),
-                    SvgPicture.asset('assets/settingsIcon.svg'),
+                    IconButton(onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => SettingsPage()));
+                    }, icon:SvgPicture.asset('assets/settingsIcon.svg'))
                   ],
                 ),
               SizedBox(height: 10.0),
@@ -64,7 +68,7 @@ class ProfilePage extends StatelessWidget {
               
               SizedBox(height: 5.0),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.values[2],
                 children: [
                   Text(
                     '0 ',
@@ -236,12 +240,16 @@ class ProfilePage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
-                          'More >>',
-                          style: TextStyle(
-                            color: Color(0xFF182CD4),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w800,
+                        TextButton(onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const DashboardPage()));
+                        },
+                          child: Text(
+                            'More >>',
+                            style: TextStyle(
+                              color: Color(0xFF182CD4),
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                            ),
                           ),
                         ),
                       ],
