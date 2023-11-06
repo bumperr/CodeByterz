@@ -2,7 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/route_manager.dart';
 import 'package:scorelah/custom_icons_icons.dart';
+import 'package:scorelah/pages/dashboard.dart';
+import 'package:scorelah/pages/first_time.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -84,13 +87,16 @@ class ProfilePage extends StatelessWidget {
               SizedBox(height: 25.0),
               Row(
                 children: [
-                  Text(
-                    'Performance >',
+                  TextButton(onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const DashboardPage()));
+                    
+                  }, child:(
+                    Text('Performance >',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                    ),
+                      fontWeight: FontWeight.w500,)
+                    )),
                   ),
                 ],
               ),
@@ -134,7 +140,7 @@ class ProfilePage extends StatelessWidget {
                               '0 ',
                               style: TextStyle(
                                 color: Color(0xFF182CD4),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -142,7 +148,7 @@ class ProfilePage extends StatelessWidget {
                               'Correct',
                               style: TextStyle(
                                 color: Color(0xFF182CD4),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -154,7 +160,7 @@ class ProfilePage extends StatelessWidget {
                               '0% Correct Rate',
                               style: TextStyle(
                                 color: Color(0xFF182CD4),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -178,7 +184,7 @@ class ProfilePage extends StatelessWidget {
                               '0 ',
                               style: TextStyle(
                                 color: Color(0xFF182CD4),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -186,7 +192,7 @@ class ProfilePage extends StatelessWidget {
                               'Wrong',
                               style: TextStyle(
                                 color: Color(0xFF182CD4),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -210,7 +216,7 @@ class ProfilePage extends StatelessWidget {
                               '0 ',
                               style: TextStyle(
                                 color: Color(0xFF182CD4),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -218,7 +224,7 @@ class ProfilePage extends StatelessWidget {
                               'Longest Streak',
                               style: TextStyle(
                                 color: Color(0xFF182CD4),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -234,7 +240,7 @@ class ProfilePage extends StatelessWidget {
                           'More >>',
                           style: TextStyle(
                             color: Color(0xFF182CD4),
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.w800,
                           ),
                         ),

@@ -69,6 +69,7 @@ Widget getBottomTitles(double value, TitleMeta meta) {
         style: TextStyle(
             fontFamily: 'Poppins',
             color: Colors.white,
+            fontSize: 10,
             fontWeight: FontWeight.w600),
       );
       break;
@@ -78,6 +79,7 @@ Widget getBottomTitles(double value, TitleMeta meta) {
         style: TextStyle(
             fontFamily: 'Poppins',
             color: Colors.white,
+            fontSize: 10,
             fontWeight: FontWeight.w600),
       );
       break;
@@ -87,6 +89,7 @@ Widget getBottomTitles(double value, TitleMeta meta) {
         style: TextStyle(
             fontFamily: 'Poppins',
             color: Colors.white,
+            fontSize: 10,
             fontWeight: FontWeight.w600),
       );
       break;
@@ -96,6 +99,7 @@ Widget getBottomTitles(double value, TitleMeta meta) {
         style: TextStyle(
             fontFamily: 'Poppins',
             color: Colors.white,
+            fontSize: 10,
             fontWeight: FontWeight.w600),
       );
       break;

@@ -1,7 +1,12 @@
+import 'dart:html';
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:scorelah/bar%20graph/bar%20graph/bar_graph.dart';
+import 'package:scorelah/pages/profile.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -15,9 +20,29 @@ class _DashboardPageState extends State<DashboardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: appBar(),
-      body: Column(
+      body: ListView(
         children: [
+          AppBar(
+      backgroundColor: Colors.white,
+      elevation: 0,
+      title: const Text(
+        'Performance',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: Colors.black,
+          fontFamily: 'Poppins',
+          fontSize: 16,
+          fontWeight: FontWeight.w800,
+          height: 1,
+        ),
+      ),
+      leading: TextButton(onPressed: () {
+        Navigator.pop(context);
+      },
+      child:Icon(
+        Icons.arrow_back,
+        color: Colors.black,
+      ))),
           noOfQuestionsToday(),
           streakAndCompletedSection(),
           avgScoreVisual()
@@ -39,7 +64,7 @@ Column avgScoreVisual() {
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 3),
         child: Container(
-          height: 337,
+          height: 369,
           width: 360,
           decoration: BoxDecoration(
               borderRadius: const BorderRadius.all(Radius.circular(20)),
@@ -87,7 +112,7 @@ Column avgScoreVisual() {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.symmetric(horizontal: 26, vertical: 4),
+                        const EdgeInsets.symmetric(horizontal: 5, vertical: 4),
                     child: CircularPercentIndicator(
                       radius: 40,
                       lineWidth: 15,
@@ -125,11 +150,13 @@ Column avgScoreVisual() {
 
 Row streakAndCompletedSection() {
   return Row(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    mainAxisAlignment: MainAxisAlignment.spaceAround,
     children: [
       Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
             child: Container(
               width: 170,
               height: 195,
@@ -314,23 +341,25 @@ Column noOfQuestionsToday() {
   );
 }
 
-AppBar appBar() {
-  return AppBar(
-      backgroundColor: Colors.white,
-      elevation: 0,
-      title: const Text(
-        'Performance',
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          color: Colors.black,
-          fontFamily: 'Poppins',
-          fontSize: 16,
-          fontWeight: FontWeight.w800,
-          height: 1,
-        ),
-      ),
-      leading: Icon(
-        Icons.arrow_back,
-        color: Colors.black,
-      ));
-}
+// AppBar appBar() {
+//   return AppBar(
+//       backgroundColor: Colors.white,
+//       elevation: 0,
+//       title: const Text(
+//         'Performance',
+//         textAlign: TextAlign.center,
+//         style: TextStyle(
+//           color: Colors.black,
+//           fontFamily: 'Poppins',
+//           fontSize: 16,
+//           fontWeight: FontWeight.w800,
+//           height: 1,
+//         ),
+//       ),
+//       leading: TextButton(onPressed: () {
+//       },
+//       child:Icon(
+//         Icons.arrow_back,
+//         color: Colors.black,
+//       )));
+// }
