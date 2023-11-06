@@ -175,7 +175,7 @@ Row streakAndCompletedSection() {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(9.0),
-                    child: SvgPicture.asset('assets/icons/lightning-icon.svg',
+                    child: SvgPicture.asset('assets/lightning-icon.svg',
                         width: 55, height: 55),
                   ),
                   Padding(
@@ -231,7 +231,7 @@ Row streakAndCompletedSection() {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(9.0),
-                    child: SvgPicture.asset('assets/icons/check-fill.svg',
+                    child: SvgPicture.asset('assets/check-fill.svg',
                         width: 60, height: 60),
                   ),
                   Padding(
