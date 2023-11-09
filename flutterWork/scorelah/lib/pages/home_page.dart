@@ -4,7 +4,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:scorelah/bot_navbar.dart';
 
 class homePage extends StatefulWidget {
   const homePage({super.key});

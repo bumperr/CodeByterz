@@ -1,12 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:scorelah/animated_textfield.dart';
 import 'package:scorelah/pages/home_page.dart';
-import 'package:scorelah/pages/login.dart';
 
 class registerPage extends StatelessWidget {
   const registerPage({super.key});

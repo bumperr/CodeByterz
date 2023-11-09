@@ -6,11 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:scorelah/animated_textfield.dart';
 import 'package:scorelah/bot_navbar.dart';
-import 'package:scorelah/custom_animate_border.dart';
 import 'package:scorelah/main.dart';
-import 'package:scorelah/pages/ft_button.dart';
-import 'package:drop_shadow/drop_shadow.dart';
-import 'package:scorelah/pages/home_page.dart';
 import 'package:scorelah/pages/profile.dart';
 import 'package:scorelah/pages/register.dart';
 import 'package:get/get.dart';
@@ -82,6 +78,7 @@ class _loginPageState extends State<loginPage> {
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,

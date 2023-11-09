@@ -28,8 +28,9 @@ class _AnimatedTextFieldState extends State<AnimatedTextField>
   void _toggleObscured() {
     setState(() {
       _obscured = !_obscured;
-      if (textFieldFocusNode.hasPrimaryFocus) 
+      if (textFieldFocusNode.hasPrimaryFocus) {
         return; // If focus is on text field, dont unfocus
+      }
       
       textFieldFocusNode.canRequestFocus =
           false; // Prevents focus if tap on eye
@@ -65,7 +66,7 @@ class _AnimatedTextFieldState extends State<AnimatedTextField>
     return Container(
       width: 310,
       decoration: BoxDecoration(
-        color: Color(0xFFF2F2F),
+        color: Color(0x0fff2f2f),
           borderRadius: BorderRadius.all(Radius.circular(20))),
       child: Theme(
         data: ThemeData(

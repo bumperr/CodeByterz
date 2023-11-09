@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:ui' as ui;
 
 import 'package:scorelah/utils.dart';
 
@@ -10,7 +9,7 @@ class CustomAnimateBorder extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     var paint = Paint();
     paint.strokeWidth = 2;
-    paint.color = Color(0xFF828282);
+    paint.color = const Color(0xFF828282);
     paint.style = PaintingStyle.stroke;
 
     var path = Path();

@@ -7,6 +7,8 @@ import 'package:scorelah/pages/home_page.dart';
 import 'package:scorelah/pages/profile.dart';
 
 class NavigationMenu extends StatefulWidget {
+  const NavigationMenu({super.key});
+
   @override
   NavigationMenuState createState() => NavigationMenuState();
 }
@@ -21,7 +23,7 @@ class NavigationMenuState extends State<NavigationMenu> {
     return Scaffold(
       body: IndexedStack(
         index: currentIndex,
-        children: const [
+        children:  [
           homePage(),
           FYPMathPage(),
           ProfilePage(),

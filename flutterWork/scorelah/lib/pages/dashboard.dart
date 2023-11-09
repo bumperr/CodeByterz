@@ -1,12 +1,8 @@
-import 'dart:html';
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:scorelah/bar%20graph/bar%20graph/bar_graph.dart';
-import 'package:scorelah/pages/profile.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -39,7 +35,7 @@ class _DashboardPageState extends State<DashboardPage> {
       leading: IconButton(onPressed: () {
         Navigator.pop(context);
       },
-      icon:Icon(
+      icon:const Icon(
         Icons.arrow_back,
         color: Colors.black,
       ))),
@@ -101,7 +97,7 @@ Column avgScoreVisual() {
                           'Goal: 80%',
                           textAlign: TextAlign.left,
                           style: TextStyle(
-                            color: Color(0xFFD9FBA5).withAlpha(200),
+                            color: const Color(0xFFD9FBA5).withAlpha(200),
                             fontFamily: 'Poppins',
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
@@ -117,8 +113,8 @@ Column avgScoreVisual() {
                       radius: 40,
                       lineWidth: 15,
                       percent: 0.72,
-                      progressColor: Color(0xffd9fba5),
-                      backgroundColor: Color(0xffd9fba5).withAlpha(100),
+                      progressColor: const Color(0xffd9fba5),
+                      backgroundColor: const Color(0xffd9fba5).withAlpha(100),
                       circularStrokeCap: CircularStrokeCap.round,
                       center: const Text(
                         '70%',
@@ -178,8 +174,8 @@ Row streakAndCompletedSection() {
                     child: SvgPicture.asset('assets/lightning-icon.svg',
                         width: 55, height: 55),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Text(
                       'Longest Streak',
                       style: TextStyle(
@@ -190,8 +186,8 @@ Row streakAndCompletedSection() {
                           height: 1),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Text(
                       '62',
                       style: TextStyle(
@@ -234,9 +230,9 @@ Row streakAndCompletedSection() {
                     child: SvgPicture.asset('assets/check-fill.svg',
                         width: 60, height: 60),
                   ),
-                  Padding(
+                  const Padding(
                     padding:
-                        const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                        EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                     child: Text(
                       'Quiz Completed',
                       style: TextStyle(
@@ -247,8 +243,8 @@ Row streakAndCompletedSection() {
                           height: 1),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(12.0),
+                  const Padding(
+                    padding: EdgeInsets.all(12.0),
                     child: Text(
                       '89',
                       style: TextStyle(

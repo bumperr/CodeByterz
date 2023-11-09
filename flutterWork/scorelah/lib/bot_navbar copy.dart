@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:scorelah/custom_icons_icons.dart';
 
 class NavigationMenu extends StatefulWidget {
+  const NavigationMenu({super.key});
+
   @override
   NavigationMenuState createState() => NavigationMenuState();
 }

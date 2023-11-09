@@ -23,9 +23,9 @@ class ScoreBarGraph extends StatelessWidget {
       BarChartData(
         minY: 0,
         maxY: 100,
-        gridData: FlGridData(show: false),
+        gridData: const FlGridData(show: false),
         borderData: FlBorderData(show: false),
-        titlesData: FlTitlesData(
+        titlesData: const FlTitlesData(
           show: true,
           topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
           leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
@@ -42,13 +42,13 @@ class ScoreBarGraph extends StatelessWidget {
                 barRods: [
                   BarChartRodData(
                     toY: data.y,
-                    color: Color(0xffd9fba5),
+                    color: const Color(0xffd9fba5),
                     width: 20,
                     borderRadius: BorderRadius.circular(4),
                     backDrawRodData: BackgroundBarChartRodData(
                       show: true,
                       toY: 100,
-                      color: Color(0xffd9fba5).withAlpha(100),
+                      color: const Color(0xffd9fba5).withAlpha(100),
                     ),
                   ),
                 ],
@@ -111,5 +111,5 @@ Widget getBottomTitles(double value, TitleMeta meta) {
       break;
   }
 
-  return SideTitleWidget(child: text, axisSide: meta.axisSide);
+  return SideTitleWidget(axisSide: meta.axisSide, child: text);
 }

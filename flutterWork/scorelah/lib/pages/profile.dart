@@ -2,10 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/route_manager.dart';
 import 'package:scorelah/custom_icons_icons.dart';
 import 'package:scorelah/pages/dashboard.dart';
-import 'package:scorelah/pages/first_time.dart';
 import 'package:scorelah/pages/settings.dart';
 
 class ProfilePage extends StatelessWidget {
